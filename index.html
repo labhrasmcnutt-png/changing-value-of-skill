@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A workshop resource for VET educators exploring how AI, scale and superstar labour markets are changing the value of skill.">
+  <title>The Changing Value of Skill | VET Workshop</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b233f'/%3E%3Cpath d='M12 43h40M17 37l10-10 8 7 12-15' fill='none' stroke='%23ffcb45' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="compass-fix.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">VS</span><span>VET Futures Workshop</span></a>
+    <nav aria-label="Page sections">
+      <a href="#shift">The shift</a><a href="#occupations">Occupations</a><a href="#education">Education</a><a href="#workshop">Workshop</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A labour-market lens for VET educators</p>
+        <h1>The value of skill is being <em>redistributed.</em></h1>
+        <p class="lead">AI may not simply remove occupations. It can widen the distance between people doing the same job—amplifying a few, compressing the middle and changing what counts as expertise.</p>
+        <div class="hero-actions"><a class="button primary" href="#shift">Explore the shift</a><button class="button ghost" id="facilitatorMode" type="button" aria-pressed="false">Facilitator mode</button></div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="A distribution showing value concentrating among fewer workers">
+        <div class="distribution">
+          <span style="--h:22%"></span><span style="--h:27%"></span><span style="--h:30%"></span><span style="--h:36%"></span><span style="--h:48%"></span><span style="--h:66%"></span><span class="peak" style="--h:94%"></span>
+        </div>
+        <div class="visual-note"><strong>Not only job loss.</strong><br>Value, bargaining power and opportunity can concentrate inside an occupation.</div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Article signals">
+      <article><strong>8–9 figures</strong><span>Packages reportedly offered to scarce AI specialists</span></article>
+      <article><strong>40%</strong><span>Profitability advantage cited for top-ten US law-firm partners over the next tier</span></article>
+      <article><strong>4 → 50</strong><span>Average MBA hires by big tech, 2018–22 versus the article’s latest year</span></article>
+      <article><strong>3×</strong><span>Growth since 2017 in Spotify artists earning over $10m, cited in the article</span></article>
+    </section>
+
+    <section id="shift" class="section split">
+      <div class="section-intro">
+        <p class="eyebrow">01 · Read the signal</p>
+        <h2>From firm advantage to individual leverage</h2>
+        <p>The article argues that technology, culture and scale are making exceptional individuals more economically consequential. Communication platforms enlarge audiences; AI labs chase scarce researchers; finance gives small teams vast computing power; and non-compete restrictions can increase mobility.</p>
+      </div>
+      <div class="shift-map">
+        <button class="shift-node active" data-shift="scale"><span>1</span>Scale</button>
+        <button class="shift-node" data-shift="technology"><span>2</span>Technology</button>
+        <button class="shift-node" data-shift="mobility"><span>3</span>Mobility</button>
+        <button class="shift-node" data-shift="culture"><span>4</span>Culture</button>
+        <div class="shift-detail" id="shiftDetail" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="warning">
+      <p class="eyebrow">The workshop provocation</p>
+      <blockquote>Are we preparing learners to enter an occupation—or to keep creating value as that occupation is reorganised?</blockquote>
+      <p>Traditional workforce planning counts jobs. Educators must also examine how tasks, rewards, routes into expertise and bargaining power are changing within jobs.</p>
+    </section>
+
+    <section id="occupations" class="section">
+      <div class="section-intro wide">
+        <p class="eyebrow">02 · Test it across occupations</p>
+        <h2>The same pressure, different consequences</h2>
+        <p>Select a field to see how the article’s pattern could translate into VET. These are workshop scenarios, not forecasts.</p>
+      </div>
+      <div class="occupation-layout">
+        <div class="occupation-tabs" role="tablist" aria-label="Occupational fields">
+          <button role="tab" aria-selected="true" data-job="construction">Construction</button>
+          <button role="tab" aria-selected="false" data-job="healthcare">Healthcare</button>
+          <button role="tab" aria-selected="false" data-job="business">Business</button>
+          <button role="tab" aria-selected="false" data-job="ict">ICT</button>
+        </div>
+        <article class="occupation-card" id="occupationCard" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="education" class="section dark">
+      <div class="section-intro wide">
+        <p class="eyebrow">03 · Redesign the learning promise</p>
+        <h2>Six implications for VET</h2>
+        <p>A narrow response—adding an AI tool demonstration—will not be enough. The curriculum, assessment and learner support model all need attention.</p>
+      </div>
+      <div class="implication-grid">
+        <article><span>01</span><h3>Teach task systems</h3><p>Help learners see a job as a changing bundle of tasks: which are automated, augmented, newly valuable or disappearing?</p></article>
+        <article><span>02</span><h3>Make judgement visible</h3><p>Assess decisions, verification, trade-offs and responsibility—not only polished outputs that AI can produce cheaply.</p></article>
+        <article><span>03</span><h3>Build complementary skill</h3><p>Combine technical fluency with domain knowledge, communication, diagnosis, craft and the ability to work safely with others.</p></article>
+        <article><span>04</span><h3>Protect routes to expertise</h3><p>If entry-level tasks vanish, design simulations, coached practice and authentic placements that still build professional pattern recognition.</p></article>
+        <article><span>05</span><h3>Teach leverage—and limits</h3><p>Show how platforms, portfolios, networks and AI can extend reach, while examining precarity, dependence and unequal access.</p></article>
+        <article><span>06</span><h3>Widen participation</h3><p>Ensure tools, data, mentoring and opportunities do not become advantages available only to already-confident learners.</p></article>
+      </div>
+    </section>
+
+    <section class="section compass-section">
+      <div class="section-intro">
+        <p class="eyebrow">04 · Use a curriculum compass</p>
+        <h2>Four questions for every programme</h2>
+        <p>Click each lens. Together they reveal whether a programme is preparing learners for a labour market of amplified capability and concentrated rewards.</p>
+      </div>
+      <div class="compass" id="compass">
+        <button data-lens="tasks"><b>Tasks</b><span>What is shifting?</span></button>
+        <button data-lens="value"><b>Value</b><span>What becomes scarce?</span></button>
+        <button data-lens="pathways"><b>Pathways</b><span>How is expertise built?</span></button>
+        <button data-lens="inclusion"><b>Inclusion</b><span>Who gains leverage?</span></button>
+        <div class="compass-core" id="compassCore"><strong>Start here</strong><span>Choose a lens</span></div>
+        <div class="compass-prompt" id="compassPrompt" aria-live="polite"><strong>Choose one of the four lenses</strong><span>The discussion prompt will appear here in full.</span></div>
+      </div>
+    </section>
+
+    <section id="workshop" class="section workshop">
+      <div class="section-intro wide">
+        <p class="eyebrow">05 · Turn insight into action</p>
+        <h2>A 35-minute workshop sequence</h2>
+      </div>
+      <ol class="timeline">
+        <li><time>5 min</time><div><h3>Notice</h3><p>What surprised or concerned you in the evidence? Name one assumption it disrupts.</p></div></li>
+        <li><time>8 min</time><div><h3>Map an occupation</h3><p>Choose one role. Sort its tasks into automated, augmented, enduring and emerging.</p></div></li>
+        <li><time>8 min</time><div><h3>Find the missing middle</h3><p>Which entry-level tasks currently help novices become experts? What happens if those tasks shrink?</p></div></li>
+        <li><time>8 min</time><div><h3>Audit inclusion</h3><p>Who has access to the tools, coaching, networks and authentic practice needed to gain leverage?</p></div></li>
+        <li><time>6 min</time><div><h3>Commit</h3><p>Choose one curriculum, assessment or partnership change to test this term.</p></div></li>
+      </ol>
+      <div class="commitment">
+        <label for="commitmentText">Our programme will…</label>
+        <textarea id="commitmentText" rows="3" placeholder="Write one practical change…"></textarea>
+        <div><button class="button primary" id="copyCommitment" type="button">Copy commitment</button><button class="button ghost light" type="button" onclick="window.print()">Print workshop page</button><span id="copyStatus" aria-live="polite"></span></div>
+      </div>
+    </section>
+
+    <section class="section guardrails">
+      <div><p class="eyebrow">A balanced reading</p><h2>Do not confuse stardom with a complete labour-market strategy.</h2></div>
+      <div class="guardrail-list">
+        <p><strong>Beware survivorship bias.</strong> Highly visible winners do not represent the whole workforce.</p>
+        <p><strong>Teams and institutions still matter.</strong> Infrastructure, colleagues, trust and public systems make individual performance possible.</p>
+        <p><strong>Technical skill is not the whole of value.</strong> Care, safety, reliability, tacit knowledge and collective capability remain essential.</p>
+        <p><strong>VET has an equity role.</strong> Education should broaden access to agency and expertise—not merely identify a few “stars”.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>The Changing Value of Skill</strong><p>Workshop resource for VET educators · Designed by Larry McNutt</p></div>
+    <p class="source"><strong>Stimulus:</strong> “The winners who take it all”, <em>The Economist</em>, Business section, 27 September 2025. This resource paraphrases and critically translates the article for educational discussion; it is not a reproduction or endorsement.</p>
+  </footer>
+
+  <aside class="facilitator-panel" id="facilitatorPanel" aria-hidden="true">
+    <button id="closePanel" aria-label="Close facilitator notes">×</button>
+    <p class="eyebrow">Facilitator notes</p>
+    <h2>Keep the discussion systemic</h2>
+    <ul><li>Ask “what changes inside the job?” before “will the job disappear?”</li><li>Challenge both technological determinism and complacency.</li><li>Look for lost entry routes into expertise.</li><li>End with a specific programme-level experiment.</li></ul>
+  </aside>
+  <script src="app.js"></script>
+</body>
+</html>
